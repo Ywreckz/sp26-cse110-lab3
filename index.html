@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSE 110 Team Meeting Minutes</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Meeting minutes for CSE 110 Team Awesome" />
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/a/a7/Camponotus_flavomarginatus_ant.jpg" />
+  </head>
+  <body>
+
+    <header>
+      <h1>Team Awesome</h1>
+      <nav>
+        <a href="#attendance">Attendance</a> |
+        <a href="#agenda">Agenda</a> |
+        <a href="#old-business">Old Business</a> |
+        <a href="#new-business">New Business</a> |
+        <a href="#misc">Misc</a> |
+        <a href="#form">Feedback Form</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <section>
+        <h2>Pomodoro Timer - First Brainstorm</h2>
+        <h3>Meeting Type: Brainstorming</h3>
+        <h3>Date: April 10, 2026</h3>
+        <h3>Location: CSE Building, Room 1202</h3>
+      </section>
+
+      <hr />
+
+      <section id="attendance">
+        <h2>Attendance</h2>
+        <ul>
+          <li><strong>John Smith</strong> (Team Lead)</li>
+          <li><em>Jane Doe</em> (Developer)</li>
+          <li>Alex Johnson (Designer)</li>
+          <li>Maria Garcia (QA)</li>
+          <li>Kevin Lee (Developer)</li>
+        </ul>
+        <p><b>Absent:</b> None</p>
+      </section>
+
+      <hr />
+
+      <section id="agenda">
+        <h2>Agenda</h2>
+        <ol>
+          <li>Review last week's action items</li>
+          <li>Discuss Pomodoro Timer feature set</li>
+          <li>Assign roles for upcoming sprint</li>
+          <li>Set next meeting date</li>
+        </ol>
+      </section>
+
+      <hr />
+
+      <section id="old-business">
+        <h2>Old Business</h2>
+        <p>The following items were <em>carried over</em> from the last meeting:</p>
+        <ul>
+          <li>Finalize the GitHub repository structure — <strong>still in progress</strong></li>
+          <li>Set up GitHub Pages — <strong>completed</strong></li>
+          <li>Decide on tech stack — <strong>completed: HTML, CSS, JS</strong></li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <section id="new-business">
+        <h2>New Business</h2>
+        <p>Topics discussed for the first time today:</p>
+        <ul>
+          <li>Design a <strong>user-friendly</strong> timer interface</li>
+          <li>Research browser <em>Notification API</em> for alerts</li>
+          <li>Plan a short/long break feature</li>
+          <li>Decide on color scheme — vote scheduled for next meeting</li>
+        </ul>
+
+        <h3>Whiteboard Diagram</h3>
+        <p>The following diagram was sketched during the meeting:</p>
+        <img
+          src="screenshots/whiteboard.jpg"
+          alt="Whiteboard diagram showing the Pomodoro Timer architecture drawn by the team"
+          width="400"
+        />
+        <br />
+        <p><i>Note: Replace the image above with an actual photo of your whiteboard diagram.</i></p>
+      </section>
+
+      <hr />
+
+      <section id="misc">
+        <h2>Miscellaneous / Q&amp;A</h2>
+
+        <details>
+          <summary>Will we use any external libraries?</summary>
+          <p>The team decided to keep it <strong>vanilla</strong> — no external libraries for now to keep things simple and educational.</p>
+        </details>
+
+        <details>
+          <summary>When is the first deliverable due?</summary>
+          <p>The first prototype is due <em>April 20th</em>. All team members should have their assigned components ready for review.</p>
+        </details>
+
+        <div>
+          <h3>Meeting Recording</h3>
+          <p>Audio recording of the meeting:</p>
+          <audio controls>
+            <source src="audio/meeting.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+
+          <p>Video recording of the meeting:</p>
+          <video controls width="400">
+            <source src="video/meeting.mp4" type="video/mp4" />
+            Your browser does not support the video element.
+          </video>
+        </div>
+
+        <p>
+          For any questions, reach out via Slack: <a href="https://slack.com">Team Slack Channel</a>
+        </p>
+        <span>Next meeting: <strong>April 17, 2026 at 3:00 PM</strong></span>
+      </section>
+
+      <hr />
+
+      <section id="form">
+        <h2>Meeting Feedback Form</h2>
+        <p>Please fill out this short form to help us improve future meetings.</p>
+
+        <form>
+          <fieldset>
+            <legend>Your Information</legend>
+
+            <label for="name">Full Name:</label><br />
+            <input type="text" id="name" name="name" placeholder="e.g. John Smith" /><br /><br />
+
+            <label for="meeting-date">Meeting Date:</label><br />
+            <input type="date" id="meeting-date" name="meeting-date" /><br /><br />
+          </fieldset>
+
+          <fieldset>
+            <legend>Meeting Rating</legend>
+
+            <label>How productive was this meeting?</label><br />
+            <input type="radio" id="very" name="rating" value="very" />
+            <label for="very">Very Productive</label><br />
+            <input type="radio" id="somewhat" name="rating" value="somewhat" />
+            <label for="somewhat">Somewhat Productive</label><br />
+            <input type="radio" id="not" name="rating" value="not" />
+            <label for="not">Not Productive</label><br /><br />
+          </fieldset>
+
+          <fieldset>
+            <legend>Topics Covered</legend>
+            <p>Which topics were discussed? (check all that apply)</p>
+            <input type="checkbox" id="agenda-check" name="topics" value="agenda" />
+            <label for="agenda-check">Agenda Review</label><br />
+            <input type="checkbox" id="sprint-check" name="topics" value="sprint" />
+            <label for="sprint-check">Sprint Planning</label><br />
+            <input type="checkbox" id="design-check" name="topics" value="design" />
+            <label for="design-check">Design Discussion</label><br /><br />
+          </fieldset>
+
+          <fieldset>
+            <legend>Additional Feedback</legend>
+
+            <label for="favorite-part">Favorite part of the meeting:</label><br />
+            <input list="parts" id="favorite-part" name="favorite-part" /><br />
+            <datalist id="parts">
+              <option value="Brainstorming session" />
+              <option value="Q&A discussion" />
+              <option value="Role assignments" />
+              <option value="Whiteboard diagrams" />
+            </datalist><br />
+
+            <label for="role">Your Role:</label><br />
+            <select id="role" name="role">
+              <option value="">-- Select your role --</option>
+              <option value="lead">Team Lead</option>
+              <option value="dev">Developer</option>
+              <option value="design">Designer</option>
+              <option value="qa">QA</option>
+            </select><br /><br />
+
+            <label for="comments">Additional Comments:</label><br />
+            <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Any other thoughts..."></textarea><br /><br />
+
+            <button type="submit">Submit Feedback</button>
+          </fieldset>
+        </form>
+      </section>
+
+    </main>
+
+    <footer>
+      <hr />
+      <p>CSE 110 &mdash; Team Awesome &mdash; Meeting Minutes &copy; 2026</p>
+    </footer>
+
+  </body>
+</html>
