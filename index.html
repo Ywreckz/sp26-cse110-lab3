@@ -4,50 +4,73 @@
     <title>CSE 110 Team Meeting Minutes</title>
     <meta charset="UTF-8" />
     <meta name="description" content="Meeting minutes for CSE 110 Team Awesome" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/a/a7/Camponotus_flavomarginatus_ant.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Internal CSS example */
+      audio, video {
+        display: block;
+        margin-top: 0.5rem;
+        border-radius: 4px;
+      }
+
+      details summary {
+        cursor: pointer;
+        font-weight: bold;
+        padding: 0.5rem 0;
+        color: #2c3e50;
+      }
+
+      details[open] summary {
+        color: #e74c3c;
+      }
+    </style>
   </head>
   <body>
 
-    <header>
-      <h1>Team Awesome</h1>
-      <nav>
-        <a href="#attendance">Attendance</a> |
-        <a href="#agenda">Agenda</a> |
-        <a href="#old-business">Old Business</a> |
-        <a href="#new-business">New Business</a> |
-        <a href="#misc">Misc</a> |
-        <a href="#form">Feedback Form</a>
-      </nav>
+    <header id="main-header">
+      <div>
+        <h1 class="minutes-title" style="letter-spacing: 0.05em; text-transform: uppercase; color: #ffffff;">Team Awesome</h1>
+        <nav style="text-align: center; margin-top: 0.5rem;">
+          <a href="#attendance">Attendance</a> |
+          <a href="#agenda">Agenda</a> |
+          <a href="#old-business">Old Business</a> |
+          <a href="#new-business">New Business</a> |
+          <a href="#misc">Misc</a> |
+          <a href="#form">Feedback Form</a>
+        </nav>
+      </div>
     </header>
 
-    <main>
+    <main class="container content-area">
 
-      <section>
+      <section class="meeting-section">
         <h2>Pomodoro Timer - First Brainstorm</h2>
-        <h3>Meeting Type: Brainstorming</h3>
-        <h3>Date: April 10, 2026</h3>
-        <h3>Location: CSE Building, Room 1202</h3>
+        <p><span class="label-inline">Meeting Type:</span> <span class="badge">Brainstorming</span></p>
+        <p><span class="label-inline">Date:</span> April 10, 2026</p>
+        <p><span class="label-inline">Location:</span> CSE Building, Room 1202</p>
       </section>
 
       <hr />
 
-      <section id="attendance">
+      <section id="attendance" class="meeting-section">
         <h2>Attendance</h2>
-        <ul>
-          <li><strong>John Smith</strong> (Team Lead)</li>
-          <li><em>Jane Doe</em> (Developer)</li>
-          <li>Alex Johnson (Designer)</li>
-          <li>Maria Garcia (QA)</li>
-          <li>Kevin Lee (Developer)</li>
+        <ul class="attendees-flex">
+          <li class="attendee-card"><strong>John Smith</strong><br /><span class="section-label">Team Lead</span></li>
+          <li class="attendee-card"><em>Jane Doe</em><br /><span class="section-label">Developer</span></li>
+          <li class="attendee-card">Alex Johnson<br /><span class="section-label">Designer</span></li>
+          <li class="attendee-card">Maria Garcia<br /><span class="section-label">QA</span></li>
+          <li class="attendee-card">Kevin Lee<br /><span class="section-label">Developer</span></li>
         </ul>
-        <p><b>Absent:</b> None</p>
+        <p class="note"><b>Absent:</b> None</p>
       </section>
 
       <hr />
 
-      <section id="agenda">
+      <section id="agenda" class="meeting-section">
         <h2>Agenda</h2>
-        <ol>
+        <ol class="agenda-list">
           <li>Review last week's action items</li>
           <li>Discuss Pomodoro Timer feature set</li>
           <li>Assign roles for upcoming sprint</li>
@@ -57,27 +80,49 @@
 
       <hr />
 
-      <section id="old-business">
+      <section id="old-business" class="meeting-section">
         <h2>Old Business</h2>
         <p>The following items were <em>carried over</em> from the last meeting:</p>
-        <ul>
-          <li>Finalize the GitHub repository structure — <strong>still in progress</strong></li>
-          <li>Set up GitHub Pages — <strong>completed</strong></li>
-          <li>Decide on tech stack — <strong>completed: HTML, CSS, JS</strong></li>
-        </ul>
+        <div class="minutes-grid">
+          <div class="grid-item">
+            <p class="label-inline">GitHub repo structure</p>
+            <p><span class="badge">In Progress</span></p>
+          </div>
+          <div class="grid-item">
+            <p class="label-inline">Set up GitHub Pages</p>
+            <p><span class="badge">Completed</span></p>
+          </div>
+          <div class="grid-item">
+            <p class="label-inline">Tech stack decision</p>
+            <p><span class="badge">Completed</span></p>
+          </div>
+        </div>
       </section>
 
       <hr />
 
-      <section id="new-business">
+      <section id="new-business" class="meeting-section">
         <h2>New Business</h2>
         <p>Topics discussed for the first time today:</p>
-        <ul>
-          <li>Design a <strong>user-friendly</strong> timer interface</li>
-          <li>Research browser <em>Notification API</em> for alerts</li>
-          <li>Plan a short/long break feature</li>
-          <li>Decide on color scheme — vote scheduled for next meeting</li>
-        </ul>
+
+        <div class="minutes-grid">
+          <div class="grid-item">
+            <p class="label-inline">Timer Interface</p>
+            <p>Design a <strong>user-friendly</strong> timer layout</p>
+          </div>
+          <div class="grid-item">
+            <p class="label-inline">Notifications</p>
+            <p>Research browser <em>Notification API</em></p>
+          </div>
+          <div class="grid-item">
+            <p class="label-inline">Break Feature</p>
+            <p>Plan short/long break functionality</p>
+          </div>
+          <div class="grid-item">
+            <p class="label-inline">Color Scheme</p>
+            <p>Vote scheduled for next meeting</p>
+          </div>
+        </div>
 
         <h3>Whiteboard Diagram</h3>
         <p>The following diagram was sketched during the meeting:</p>
@@ -87,25 +132,25 @@
           width="400"
         />
         <br />
-        <p><i>Note: Replace the image above with an actual photo of your whiteboard diagram.</i></p>
+        <p class="note"><i>Note: Replace the image above with an actual photo of your whiteboard diagram.</i></p>
       </section>
 
       <hr />
 
-      <section id="misc">
+      <section id="misc" class="meeting-section">
         <h2>Miscellaneous / Q&amp;A</h2>
 
         <details>
           <summary>Will we use any external libraries?</summary>
-          <p>The team decided to keep it <strong>vanilla</strong> — no external libraries for now to keep things simple and educational.</p>
+          <p>The team decided to keep it <strong>vanilla</strong> — no external libraries for now.</p>
         </details>
 
         <details>
           <summary>When is the first deliverable due?</summary>
-          <p>The first prototype is due <em>April 20th</em>. All team members should have their assigned components ready for review.</p>
+          <p>The first prototype is due <em>April 20th</em>. All team members should have their assigned components ready.</p>
         </details>
 
-        <div>
+        <div class="section-block">
           <h3>Meeting Recording</h3>
           <p>Audio recording of the meeting:</p>
           <audio controls>
@@ -121,14 +166,15 @@
         </div>
 
         <p>
-          For any questions, reach out via Slack: <a href="https://slack.com">Team Slack Channel</a>
+          For any questions, reach out via Slack:
+          <a href="https://slack.com" target="_blank">Team Slack Channel</a>
         </p>
         <span>Next meeting: <strong>April 17, 2026 at 3:00 PM</strong></span>
       </section>
 
       <hr />
 
-      <section id="form">
+      <section id="form" class="meeting-section">
         <h2>Meeting Feedback Form</h2>
         <p>Please fill out this short form to help us improve future meetings.</p>
 
@@ -190,7 +236,7 @@
             <label for="comments">Additional Comments:</label><br />
             <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Any other thoughts..."></textarea><br /><br />
 
-            <button type="submit">Submit Feedback</button>
+            <button type="submit" class="btn-action">Submit Feedback</button>
           </fieldset>
         </form>
       </section>
@@ -198,9 +244,10 @@
     </main>
 
     <footer>
-      <hr />
       <p>CSE 110 &mdash; Team Awesome &mdash; Meeting Minutes &copy; 2026</p>
     </footer>
+
+    <a href="#" class="back-to-top">↑ Top</a>
 
   </body>
 </html>
